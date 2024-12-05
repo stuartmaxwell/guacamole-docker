@@ -2,10 +2,6 @@ services:
   guacd:
     env_file: .env
     build: .
-    ports:
-      - "4822:4822"
   guacamole:
     env_file: .env
     image: guacamole/guacamole:latest
-    ports:
-      - "8822:8080"
